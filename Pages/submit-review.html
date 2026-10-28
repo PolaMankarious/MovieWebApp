@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CineScope movie reviews and ratings" />
     <title>Submit a review | CineScope</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/submit-reviews.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="index.html">Cine<span>Scope</span></a>
-        <nav aria-label="User navigation">
-          <span class="nav-label">User navigation</span>
-          <span class="nav-links"
-            ><a class="" href="movies.html">Movies</a
-            ><a class="" href="my-reviews.html">My Reviews</a
-            ><a class="active" href="submit-review.html">Submit Review</a
-            ><a class="" href="index.html">Sign out</a></span
-          >
-        </nav>
+      <div class="container">
+        <table class="nav">
+          <tr>
+            <td>
+              <a class="brand" href="index.html">Cine<span>Scope</span></a>
+            </td>
+            <td class="nav-right">
+              <nav aria-label="User navigation">
+                <span class="nav-label">User navigation</span>
+                <span class="nav-links"
+                  ><a href="movies.html">Movies</a
+                  ><a href="my-reviews.html">My Reviews</a
+                  ><a class="active" href="submit-review.html">Submit Review</a
+                  ><a href="index.html">Sign out</a></span
+                >
+              </nav>
+            </td>
+          </tr>
+        </table>
       </div>
     </header>
     <main>
@@ -29,8 +37,8 @@
           <h1>Write a review.</h1>
           <p class="lead">Share your opinion and give the movie a rating.</p>
           <div class="field">
-            <label for="movie">Select movie</label
-            ><select id="movie" name="movie" required>
+            <label for="movie">Select movie</label>
+            <select id="movie" name="movie" required>
               <option value="">Choose a movie</option>
               <option value="MV-001">The Last Orbit (2025)</option>
               <option value="MV-002">Golden Hour (2024)</option>
@@ -41,8 +49,8 @@
             </select>
           </div>
           <div class="field">
-            <label for="rating">Rating</label
-            ><select id="rating" name="rating" required>
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
               <option value="">Choose a rating</option>
               <option value="10">10 — Masterpiece</option>
               <option value="9">9 — Excellent</option>
@@ -57,8 +65,8 @@
             </select>
           </div>
           <div class="field">
-            <label for="reviewTitle">Review title</label
-            ><input
+            <label for="reviewTitle">Review title</label>
+            <input
               id="reviewTitle"
               name="reviewTitle"
               type="text"
@@ -69,16 +77,16 @@
             />
           </div>
           <div class="field">
-            <label for="reviewText">Your review</label
-            ><textarea
+            <label for="reviewText">Your review</label>
+            <textarea
               id="reviewText"
               name="reviewText"
               minlength="20"
               maxlength="1500"
               required
               placeholder="What worked for you? What could be better?"
-            ></textarea
-            ><small>Write between 20 and 1,500 characters.</small>
+            ></textarea>
+            <small>Write between 20 and 1,500 characters.</small>
           </div>
           <button class="btn btn-primary" type="submit">Submit review</button>
           <p class="form-note">
@@ -89,9 +97,13 @@
       </section>
     </main>
     <footer>
-      <div class="container footer-row">
-        <span>© 2026 CineScope — Movie Review Website</span>
-        <span>Web Engineering · Phase 1 · Static prototype</span>
+      <div class="container">
+        <table class="footer-row">
+          <tr>
+            <td>© 2026 CineScope — Movie Review Website</td>
+            <td>Web Engineering · Phase 1 · Static prototype</td>
+          </tr>
+        </table>
       </div>
     </footer>
   </body>

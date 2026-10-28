@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1020;
+  color: #f3f6ff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid #2a3149;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav td {
+  height: 76px;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.brand span {
+  color: #f5c451;
+}
+
+.nav-label {
+  color: #f5c451;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  color: #aab5d0;
+  font-size: 15px;
+  margin-left: 18px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f5c451;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #f5c451;
+  color: #19160d;
+}
+
+.btn-primary:hover {
+  background: #ffdc83;
+}
+
+.page-title {
+  padding: 40px 0 20px;
+}
+
+.page-title p {
+  color: #aab5d0;
+  margin: 0;
+}
+
+.eyebrow {
+  color: #f5c451;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 10px 0 50px;
+}
+
+.panel {
+  background: #131b2f;
+  border: 1px solid #2a3149;
+  border-radius: 15px;
+  padding: 24px;
+  margin-bottom: 25px;
+}
+
+.reviews-table {
+  width: 100%;
+}
+
+.reviews-table th,
+.reviews-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 14px 12px;
+  border-bottom: 1px solid #2a3149;
+}
+
+.reviews-table th {
+  color: #aab5d0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.reviews-table td {
+  font-size: 15px;
+}
+
+.inline-link {
+  color: #f5c451;
+  text-decoration: underline;
+}
+
+.rating {
+  color: #f5c451;
+  font-weight: bold;
+}
+
+.status {
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-pending {
+  background: #3a3320;
+  color: #f5c451;
+}
+
+.status-approved {
+  background: #1d3a34;
+  color: #67d6a3;
+}
+
+.status-rejected {
+  background: #3d2430;
+  color: #ff8585;
+}
+
+.notice {
+  background: #17233d;
+  border: 1px solid #3a5078;
+  border-radius: 10px;
+  color: #c9dcff;
+  padding: 13px 16px;
+  margin-bottom: 20px;
+}
+
+footer {
+  border-top: 1px solid #2a3149;
+  padding: 24px 0;
+  color: #aab5d0;
+  font-size: 14px;
+}
+
+.footer-row {
+  width: 100%;
+}
+
+.footer-row td:last-child {
+  text-align: right;
+}
