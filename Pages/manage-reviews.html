@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CineScope movie reviews and ratings" />
+    <title>Manage reviews | CineScope</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Cine<span>Scope</span></a>
+        <nav aria-label="Admin navigation">
+          <span class="nav-label">Admin navigation</span>
+          <span class="nav-links"
+            ><a class="" href="admin-dashboard.html">Dashboard</a
+            ><a class="" href="movies.html">Movies</a
+            ><a class="" href="add-movie.html">Add Movie</a
+            ><a class="active" href="manage-reviews.html">Manage Reviews</a
+            ><a class="" href="index.html">Sign out</a></span
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container page-title">
+        <span class="eyebrow">Moderation queue</span>
+        <h1>Manage submitted reviews</h1>
+        <p>Review user feedback and demonstrate accept/reject decisions.</p>
+      </section>
+      <section class="container section" style="padding-top: 10px">
+        <div class="panel">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>User / Movie</th>
+                  <th>Rating</th>
+                  <th>Review</th>
+                  <th>Status</th>
+                  <th>Admin message</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Jamie Lee</strong><br /><span class="help"
+                      >The Last Orbit</span
+                    >
+                  </td>
+                  <td class="rating">★ 8/10</td>
+                  <td>Great visuals and pacing.</td>
+                  <td><span class="status status-pending">Pending</span></td>
+                  <td>—</td>
+                  <td>
+                    <div class="card-actions">
+                      <a class="btn btn-primary btn-small" href="#decision"
+                        >Accept</a
+                      ><a class="btn btn-danger btn-small" href="#decision"
+                        >Reject</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Sam Taylor</strong><br /><span class="help"
+                      >Golden Hour</span
+                    >
+                  </td>
+                  <td class="rating">★ 7/10</td>
+                  <td>A warm story with a few slow moments.</td>
+                  <td><span class="status status-approved">Approved</span></td>
+                  <td>Published successfully.</td>
+                  <td><span class="help">No action needed</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Riley Park</strong><br /><span class="help"
+                      >Crimson City</span
+                    >
+                  </td>
+                  <td class="rating">★ 4/10</td>
+                  <td>Very bad.</td>
+                  <td><span class="status status-rejected">Rejected</span></td>
+                  <td>Please add specific, constructive feedback.</td>
+                  <td><span class="help">Decision recorded (sample)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel" id="decision">
+          <h2>Decision message</h2>
+          <p class="help">
+            The assignment requires a message when a review is rejected. This
+            static form demonstrates that field.
+          </p>
+          <form action="manage-reviews.html" method="get">
+            <div class="field">
+              <label for="reviewId">Review ID</label
+              ><input
+                id="reviewId"
+                name="reviewId"
+                placeholder="e.g. RV-001"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="decision">Decision</label
+              ><select id="decision" name="decision" required>
+                <option value="">Choose a decision</option>
+                <option value="approved">Accept review</option>
+                <option value="rejected">Reject review</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message"
+                >Message to user (required for rejection)</label
+              ><textarea
+                id="message"
+                name="message"
+                placeholder="Explain the decision to the user"
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Submit decision (demo)
+            </button>
+          </form>
+          <p class="form-note">
+            In Phase 1, the form does not update the table or send a message.
+            That behavior requires JavaScript/backend logic in a later phase.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 CineScope — Movie Review Website</span>
+        <span>Web Engineering · Phase 1 · Static prototype</span>
+      </div>
+    </footer>
+  </body>
+</html>

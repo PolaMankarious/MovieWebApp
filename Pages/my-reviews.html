@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CineScope movie reviews and ratings" />
+    <title>My reviews | CineScope</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Cine<span>Scope</span></a>
+        <nav aria-label="User navigation">
+          <span class="nav-label">User navigation</span>
+          <span class="nav-links"
+            ><a class="" href="movies.html">Movies</a
+            ><a class="active" href="my-reviews.html">My Reviews</a
+            ><a class="" href="submit-review.html">Submit Review</a
+            ><a class="" href="index.html">Sign out</a></span
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container page-title">
+        <span class="eyebrow">Your activity</span>
+        <h1>My submitted reviews</h1>
+        <p>Review your submissions and check their moderation status.</p>
+      </section>
+      <section class="container section" style="padding-top: 10px">
+        <div class="panel">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Movie</th>
+                  <th>Rating</th>
+                  <th>Review</th>
+                  <th>Status</th>
+                  <th>Admin message</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a class="inline-link" href="movie-details.html"
+                      >The Last Orbit</a
+                    >
+                  </td>
+                  <td class="rating">★ 9/10</td>
+                  <td>Thoughtful sci-fi with a memorable ending.</td>
+                  <td><span class="status status-approved">Approved</span></td>
+                  <td>Published successfully.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="inline-link" href="movie-details.html"
+                      >Golden Hour</a
+                    >
+                  </td>
+                  <td class="rating">★ 7/10</td>
+                  <td>A warm story with a few slow moments.</td>
+                  <td><span class="status status-pending">Pending</span></td>
+                  <td>Awaiting admin review.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="inline-link" href="movie-details.html"
+                      >Crimson City</a
+                    >
+                  </td>
+                  <td class="rating">★ 4/10</td>
+                  <td>The story did not work for me.</td>
+                  <td><span class="status status-rejected">Rejected</span></td>
+                  <td>Please add specific, constructive feedback.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="notice">
+          These rows are sample data to demonstrate the required review status
+          interface. They are not connected to a database.
+        </div>
+        <a class="btn btn-primary" href="submit-review.html"
+          >Submit another review</a
+        >
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 CineScope — Movie Review Website</span>
+        <span>Web Engineering · Phase 1 · Static prototype</span>
+      </div>
+    </footer>
+  </body>
+</html>

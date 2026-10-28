@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CineScope movie reviews and ratings" />
+    <title>Create account | CineScope</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Cine<span>Scope</span></a>
+        <nav aria-label="Guest navigation">
+          <span class="nav-label">Guest navigation</span>
+          <span class="nav-links"
+            ><a class="" href="index.html">Home</a
+            ><a class="" href="movies.html">Movies</a
+            ><a class="" href="login.html">Sign in</a
+            ><a class="active" href="signup.html">Create account</a></span
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <form class="form-card" action="login.html" method="get">
+          <span class="eyebrow">Join the community</span>
+          <h1>Create account.</h1>
+          <p class="lead">
+            Set up a CineScope account to share your movie opinions.
+          </p>
+          <div class="field">
+            <label for="username">Username</label
+            ><input
+              id="username"
+              name="username"
+              type="text"
+              minlength="3"
+              maxlength="30"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="password">Password</label
+              ><input
+                id="password"
+                name="password"
+                type="password"
+                minlength="8"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="confirmPassword">Confirm password</label
+              ><input
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                minlength="8"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="accountType"
+              >Account type (display only in Phase 1)</label
+            ><select id="accountType" name="accountType" required>
+              <option value="user">User</option>
+              <option value="admin">
+                Admin (for project demonstration)
+              </option></select
+            ><small
+              >The assignment requires admin sign-up fields including an
+              is_admin field. In this static prototype, account type is shown as
+              a form field and is not used for real permissions.</small
+            >
+          </div>
+          <label class="check-row"
+            ><input type="checkbox" name="terms" required />
+            <span
+              >I confirm that the information I entered is correct.</span
+            ></label
+          >
+          <button class="btn btn-primary" type="submit">Create account</button>
+          <p class="help" style="margin-top: 18px">
+            HTML validation is enabled. Password matching and account creation
+            require later-phase logic.
+          </p>
+          <p>
+            Already registered?
+            <a class="inline-link" href="login.html">Sign in</a>
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 CineScope — Movie Review Website</span>
+        <span>Web Engineering · Phase 1 · Static prototype</span>
+      </div>
+    </footer>
+  </body>
+</html>

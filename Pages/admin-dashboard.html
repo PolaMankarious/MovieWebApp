@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CineScope movie reviews and ratings">
+  <title>Admin dashboard | CineScope</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Cine<span>Scope</span></a>
+    <nav aria-label="Admin navigation">
+      <span class="nav-label">Admin navigation</span>
+      <span class="nav-links"><a class="active" href="admin-dashboard.html">Dashboard</a><a class="" href="movies.html">Movies</a><a class="" href="add-movie.html">Add Movie</a><a class="" href="manage-reviews.html">Manage Reviews</a><a class="" href="index.html">Sign out</a></span>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="container page-title"><span class="eyebrow">Administration</span><h1>Dashboard</h1><p>A central place to manage the movie catalog and moderate submitted reviews.</p></section>
+<section class="container section" style="padding-top:10px">
+  <div class="stats">
+    <div class="stat-card"><strong>06</strong><span>Movies in sample catalog</span></div>
+    <div class="stat-card"><strong>12</strong><span>Submitted reviews (sample)</span></div>
+    <div class="stat-card"><strong>04</strong><span>Reviews awaiting approval</span></div>
+  </div>
+  <div class="grid">
+    <article class="panel"><span class="eyebrow">Catalog</span><h2>Manage movies</h2><p class="help">Add a new title, review existing details, or open the edit form.</p><div class="card-actions"><a class="btn btn-primary" href="add-movie.html">Add movie</a><a class="btn btn-secondary" href="movies.html">View catalog</a></div></article>
+    <article class="panel"><span class="eyebrow">Moderation</span><h2>Review queue</h2><p class="help">Inspect submitted reviews and demonstrate accept/reject controls.</p><div class="card-actions"><a class="btn btn-primary" href="manage-reviews.html">Manage reviews</a></div></article>
+    <article class="panel"><span class="eyebrow">Account</span><h2>Admin profile</h2><p class="help">The admin account form is available from the sign-up page for Phase 1 demonstration.</p><div class="card-actions"><a class="btn btn-secondary" href="signup.html">Open sign-up</a></div></article>
+  </div>
+  <div class="notice" style="margin-top:22px">The dashboard counts and actions are static demonstration content. Real CRUD operations and permissions are part of later phases.</div>
+</section>
+
+</main>
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 CineScope — Movie Review Website</span>
+    <span>Web Engineering · Phase 1 · Static prototype</span>
+  </div>
+</footer>
+</body>
+</html>

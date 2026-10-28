@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CineScope movie reviews and ratings" />
+    <title>Edit movie | CineScope</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Cine<span>Scope</span></a>
+        <nav aria-label="Admin navigation">
+          <span class="nav-label">Admin navigation</span>
+          <span class="nav-links"
+            ><a class="" href="admin-dashboard.html">Dashboard</a
+            ><a class="" href="movies.html">Movies</a
+            ><a class="active" href="add-movie.html">Add Movie</a
+            ><a class="" href="manage-reviews.html">Manage Reviews</a
+            ><a class="" href="index.html">Sign out</a></span
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <form class="form-card" action="admin-dashboard.html" method="get">
+          <span class="eyebrow">Catalog management</span>
+          <h1>Edit movie.</h1>
+          <p class="lead">
+            Sample edit form pre-filled with the example movie details.
+          </p>
+          <div class="field">
+            <label for="movieId">Movie ID</label
+            ><input id="movieId" name="movieId" value="MV-001" readonly />
+          </div>
+          <div class="field">
+            <label for="title">Title</label
+            ><input
+              id="title"
+              name="title"
+              value="The Last Orbit"
+              required
+              maxlength="120"
+            />
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="genre">Genre</label
+              ><select id="genre" name="genre" required>
+                <option selected>Sci-Fi</option>
+                <option>Action</option>
+                <option>Adventure</option>
+                <option>Comedy</option>
+                <option>Drama</option>
+                <option>Mystery</option>
+                <option>Thriller</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="year">Release year</label
+              ><input
+                id="year"
+                name="year"
+                type="number"
+                min="1888"
+                max="2100"
+                value="2025"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="director">Director</label
+            ><input
+              id="director"
+              name="director"
+              value="Maya Collins"
+              required
+              maxlength="100"
+            />
+          </div>
+          <div class="field">
+            <label for="description">Description</label
+            ><textarea id="description" name="description" required>
+A deep-space crew discovers a signal that challenges everything they know about their mission and their return home.</textarea
+            >
+          </div>
+          <button class="btn btn-primary" type="submit">
+            Update movie (demo)</button
+          ><a class="btn btn-secondary" href="admin-dashboard.html">Cancel</a>
+          <p class="help" style="margin-top: 16px">
+            Pre-filled values demonstrate an edit interface. Saving changes
+            requires later-phase logic.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 CineScope — Movie Review Website</span>
+        <span>Web Engineering · Phase 1 · Static prototype</span>
+      </div>
+    </footer>
+  </body>
+</html>

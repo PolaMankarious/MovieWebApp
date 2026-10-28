@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CineScope movie reviews and ratings" />
+    <title>Add movie | CineScope</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Cine<span>Scope</span></a>
+        <nav aria-label="Admin navigation">
+          <span class="nav-label">Admin navigation</span>
+          <span class="nav-links"
+            ><a class="" href="admin-dashboard.html">Dashboard</a
+            ><a class="" href="movies.html">Movies</a
+            ><a class="active" href="add-movie.html">Add Movie</a
+            ><a class="" href="manage-reviews.html">Manage Reviews</a
+            ><a class="" href="index.html">Sign out</a></span
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <form class="form-card" action="admin-dashboard.html" method="get">
+          <span class="eyebrow">Catalog management</span>
+          <h1>Add a movie.</h1>
+          <p class="lead">
+            Enter the required information for a new movie listing.
+          </p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="movieId">Movie ID</label
+              ><input
+                id="movieId"
+                name="movieId"
+                required
+                maxlength="20"
+                placeholder="e.g. MV-007"
+              />
+            </div>
+            <div class="field">
+              <label for="title">Title</label
+              ><input id="title" name="title" required maxlength="120" />
+            </div>
+            <div class="field">
+              <label for="genre">Genre</label
+              ><select id="genre" name="genre" required>
+                <option value="">Select genre</option>
+                <option>Action</option>
+                <option>Adventure</option>
+                <option>Animation</option>
+                <option>Comedy</option>
+                <option>Drama</option>
+                <option>Horror</option>
+                <option>Mystery</option>
+                <option>Romance</option>
+                <option>Sci-Fi</option>
+                <option>Thriller</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="year">Release year</label
+              ><input
+                id="year"
+                name="year"
+                type="number"
+                min="1888"
+                max="2100"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="director">Director</label
+            ><input id="director" name="director" required maxlength="100" />
+          </div>
+          <div class="field">
+            <label for="description">Description</label
+            ><textarea
+              id="description"
+              name="description"
+              required
+              minlength="20"
+              maxlength="2000"
+            ></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            Save movie (demo)</button
+          ><a class="btn btn-secondary" href="admin-dashboard.html">Cancel</a>
+          <p class="help" style="margin-top: 16px">
+            This form demonstrates required fields and native HTML validation.
+            It does not save to a database in Phase 1.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 CineScope — Movie Review Website</span>
+        <span>Web Engineering · Phase 1 · Static prototype</span>
+      </div>
+    </footer>
+  </body>
+</html>
