@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CineScope movie reviews and ratings" />
     <title>Browse movies | CineScope</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/movies.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="index.html">Cine<span>Scope</span></a>
-        <nav aria-label="Guest navigation">
-          <span class="nav-label">Guest navigation</span>
-          <span class="nav-links"
-            ><a class="" href="index.html">Home</a
-            ><a class="active" href="movies.html">Movies</a
-            ><a class="" href="login.html">Sign in</a
-            ><a class="" href="signup.html">Create account</a></span
-          >
-        </nav>
+      <div class="container">
+        <table class="nav">
+          <tr>
+            <td>
+              <a class="brand" href="index.html"
+                >Cine
+                <span>Scope</span>
+              </a>
+            </td>
+            <td class="nav-right">
+              <nav aria-label="Guest navigation">
+                <span class="nav-label">Guest navigation</span>
+                <span class="nav-links">
+                  <a href="index.html">Home</a>
+                  <a class="active" href="movies.html">Movies</a>
+                  <a href="login.html">Sign in</a>
+                  <a href="signup.html">Create account</a></span
+                >
+              </nav>
+            </td>
+          </tr>
+        </table>
       </div>
     </header>
     <main>
@@ -32,199 +43,260 @@
       </section>
       <section class="container section" style="padding-top: 10px">
         <form class="panel" action="movies.html" method="get">
-          <div class="search-grid">
-            <div class="field">
-              <label for="movieId">Movie ID</label
-              ><input id="movieId" name="id" placeholder="e.g. MV-001" />
-            </div>
-            <div class="field">
-              <label for="title">Title</label
-              ><input id="title" name="title" placeholder="Movie title" />
-            </div>
-            <div class="field">
-              <label for="genre">Genre</label
-              ><select id="genre" name="genre">
-                <option value="">Any genre</option>
-                <option>Action</option>
-                <option>Adventure</option>
-                <option>Comedy</option>
-                <option>Drama</option>
-                <option>Mystery</option>
-                <option>Sci-Fi</option>
-                <option>Thriller</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="year">Release year</label
-              ><input
-                id="year"
-                name="year"
-                type="number"
-                min="1888"
-                max="2100"
-                placeholder="2025"
-              />
-            </div>
-            <div class="field">
-              <label for="director">Director</label
-              ><input
-                id="director"
-                name="director"
-                placeholder="Director name"
-              />
-            </div>
-          </div>
+          <table class="search-grid">
+            <tr>
+              <td>
+                <div class="field">
+                  <label for="movieId">Movie ID</label>
+                  <input id="movieId" name="id" placeholder="e.g. MV-001" />
+                </div>
+              </td>
+              <td>
+                <div class="field">
+                  <label for="title">Title</label>
+                  <input id="title" name="title" placeholder="Movie title" />
+                </div>
+              </td>
+              <td>
+                <div class="field">
+                  <label for="genre">Genre</label>
+                  <select id="genre" name="genre">
+                    <option value="">Any genre</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Mystery</option>
+                    <option>Sci-Fi</option>
+                    <option>Thriller</option>
+                  </select>
+                </div>
+              </td>
+              <td>
+                <div class="field">
+                  <label for="year">Release year</label>
+                  <input
+                    id="year"
+                    name="year"
+                    type="number"
+                    min="1888"
+                    max="2100"
+                    placeholder="2025"
+                  />
+                </div>
+              </td>
+              <td>
+                <div class="field">
+                  <label for="director">Director</label>
+                  <input
+                    id="director"
+                    name="director"
+                    placeholder="Director name"
+                  />
+                </div>
+              </td>
+            </tr>
+          </table>
           <div class="search-actions">
-            <button class="btn btn-primary" type="submit">Search catalog</button
-            ><a class="btn btn-secondary" href="movies.html">Clear</a>
+            <button class="btn btn-primary" type="submit">
+              Search catalog
+            </button>
+            <a class="btn btn-secondary" href="movies.html">Clear</a>
           </div>
           <p class="help">
             The search form is included for Phase 1. Results are sample content
             and are not dynamically filtered yet.
           </p>
         </form>
-        <div class="section-head">
-          <div>
-            <h2>All movies</h2>
-            <p>6 sample titles · Static Phase 1 data</p>
-          </div>
-          <span class="tag">Sorted by featured</span>
-        </div>
-        <div class="grid">
-          <article class="movie-card">
-            <div class="movie-art art-blue">The Last Orbit</div>
-            <div class="movie-body">
-              <div class="movie-meta">
-                <span>Sci-Fi · 2025</span><span class="rating">★ 8.7/10</span>
-              </div>
-              <h3 style="margin: 12px 0 6px">The Last Orbit</h3>
-              <p class="help">Directed by Maya Collins</p>
-              <div class="card-actions">
-                <a
-                  class="btn btn-primary btn-small"
-                  href="movie-details.html?id=MV-001"
-                  >View details</a
-                ><a
-                  class="btn btn-secondary btn-small"
-                  href="submit-review.html?movie=MV-001"
-                  >Review</a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="movie-card">
-            <div class="movie-art art-gold">Golden Hour</div>
-            <div class="movie-body">
-              <div class="movie-meta">
-                <span>Drama · 2024</span><span class="rating">★ 8.2/10</span>
-              </div>
-              <h3 style="margin: 12px 0 6px">Golden Hour</h3>
-              <p class="help">Directed by Daniel Brooks</p>
-              <div class="card-actions">
-                <a
-                  class="btn btn-primary btn-small"
-                  href="movie-details.html?id=MV-002"
-                  >View details</a
-                ><a
-                  class="btn btn-secondary btn-small"
-                  href="submit-review.html?movie=MV-002"
-                  >Review</a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="movie-card">
-            <div class="movie-art art-red">Crimson City</div>
-            <div class="movie-body">
-              <div class="movie-meta">
-                <span>Thriller · 2023</span><span class="rating">★ 7.9/10</span>
-              </div>
-              <h3 style="margin: 12px 0 6px">Crimson City</h3>
-              <p class="help">Directed by Nora Hayes</p>
-              <div class="card-actions">
-                <a
-                  class="btn btn-primary btn-small"
-                  href="movie-details.html?id=MV-003"
-                  >View details</a
-                ><a
-                  class="btn btn-secondary btn-small"
-                  href="submit-review.html?movie=MV-003"
-                  >Review</a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="movie-card">
-            <div class="movie-art art-green">Wildwood</div>
-            <div class="movie-body">
-              <div class="movie-meta">
-                <span>Adventure · 2025</span
-                ><span class="rating">★ 8.4/10</span>
-              </div>
-              <h3 style="margin: 12px 0 6px">Wildwood</h3>
-              <p class="help">Directed by Ethan Cole</p>
-              <div class="card-actions">
-                <a
-                  class="btn btn-primary btn-small"
-                  href="movie-details.html?id=MV-004"
-                  >View details</a
-                ><a
-                  class="btn btn-secondary btn-small"
-                  href="submit-review.html?movie=MV-004"
-                  >Review</a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="movie-card">
-            <div class="movie-art art-purple">The Glass Key</div>
-            <div class="movie-body">
-              <div class="movie-meta">
-                <span>Mystery · 2022</span><span class="rating">★ 7.6/10</span>
-              </div>
-              <h3 style="margin: 12px 0 6px">The Glass Key</h3>
-              <p class="help">Directed by Amira Stone</p>
-              <div class="card-actions">
-                <a
-                  class="btn btn-primary btn-small"
-                  href="movie-details.html?id=MV-005"
-                  >View details</a
-                ><a
-                  class="btn btn-secondary btn-small"
-                  href="submit-review.html?movie=MV-005"
-                  >Review</a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="movie-card">
-            <div class="movie-art art-slate">Beyond the North</div>
-            <div class="movie-body">
-              <div class="movie-meta">
-                <span>Drama · 2024</span><span class="rating">★ 8.1/10</span>
-              </div>
-              <h3 style="margin: 12px 0 6px">Beyond the North</h3>
-              <p class="help">Directed by Leo Martin</p>
-              <div class="card-actions">
-                <a
-                  class="btn btn-primary btn-small"
-                  href="movie-details.html?id=MV-006"
-                  >View details</a
-                ><a
-                  class="btn btn-secondary btn-small"
-                  href="submit-review.html?movie=MV-006"
-                  >Review</a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
+        <table class="section-head">
+          <tr>
+            <td>
+              <h2>All movies</h2>
+              <p>6 sample titles · Static Phase 1 data</p>
+            </td>
+            <td class="section-head-side">
+              <span class="tag">Sorted by featured</span>
+            </td>
+          </tr>
+        </table>
+        <table class="grid">
+          <tr>
+            <td>
+              <article class="movie-card">
+                <div class="movie-art art-blue">The Last Orbit</div>
+                <div class="movie-body">
+                  <table class="movie-meta">
+                    <tr>
+                      <td>Sci-Fi · 2025</td>
+                      <td><span class="rating">★ 8.7/10</span></td>
+                    </tr>
+                  </table>
+                  <h3 style="margin: 12px 0 6px">The Last Orbit</h3>
+                  <p class="help">Directed by Maya Collins</p>
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-primary btn-small"
+                      href="movie-details.html?id=MV-001"
+                      >View details</a
+                    >
+                    <a
+                      class="btn btn-secondary btn-small"
+                      href="submit-review.html?movie=MV-001"
+                      >Review</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </td>
+            <td>
+              <article class="movie-card">
+                <div class="movie-art art-gold">Golden Hour</div>
+                <div class="movie-body">
+                  <table class="movie-meta">
+                    <tr>
+                      <td>Drama · 2024</td>
+                      <td><span class="rating">★ 8.2/10</span></td>
+                    </tr>
+                  </table>
+                  <h3 style="margin: 12px 0 6px">Golden Hour</h3>
+                  <p class="help">Directed by Daniel Brooks</p>
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-primary btn-small"
+                      href="movie-details.html?id=MV-002"
+                      >View details</a
+                    >
+                    <a
+                      class="btn btn-secondary btn-small"
+                      href="submit-review.html?movie=MV-002"
+                      >Review</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </td>
+            <td>
+              <article class="movie-card">
+                <div class="movie-art art-red">Crimson City</div>
+                <div class="movie-body">
+                  <table class="movie-meta">
+                    <tr>
+                      <td>Thriller · 2023</td>
+                      <td><span class="rating">★ 7.9/10</span></td>
+                    </tr>
+                  </table>
+                  <h3 style="margin: 12px 0 6px">Crimson City</h3>
+                  <p class="help">Directed by Nora Hayes</p>
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-primary btn-small"
+                      href="movie-details.html?id=MV-003"
+                      >View details</a
+                    >
+                    <a
+                      class="btn btn-secondary btn-small"
+                      href="submit-review.html?movie=MV-003"
+                      >Review</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <article class="movie-card">
+                <div class="movie-art art-green">Wildwood</div>
+                <div class="movie-body">
+                  <table class="movie-meta">
+                    <tr>
+                      <td>Adventure · 2025</td>
+                      <td><span class="rating">★ 8.4/10</span></td>
+                    </tr>
+                  </table>
+                  <h3 style="margin: 12px 0 6px">Wildwood</h3>
+                  <p class="help">Directed by Ethan Cole</p>
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-primary btn-small"
+                      href="movie-details.html?id=MV-004"
+                      >View details</a
+                    >
+                    <a
+                      class="btn btn-secondary btn-small"
+                      href="submit-review.html?movie=MV-004"
+                      >Review</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </td>
+            <td>
+              <article class="movie-card">
+                <div class="movie-art art-purple">The Glass Key</div>
+                <div class="movie-body">
+                  <table class="movie-meta">
+                    <tr>
+                      <td>Mystery · 2022</td>
+                      <td><span class="rating">★ 7.6/10</span></td>
+                    </tr>
+                  </table>
+                  <h3 style="margin: 12px 0 6px">The Glass Key</h3>
+                  <p class="help">Directed by Amira Stone</p>
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-primary btn-small"
+                      href="movie-details.html?id=MV-005"
+                      >View details</a
+                    >
+                    <a
+                      class="btn btn-secondary btn-small"
+                      href="submit-review.html?movie=MV-005"
+                      >Review</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </td>
+            <td>
+              <article class="movie-card">
+                <div class="movie-art art-slate">Beyond the North</div>
+                <div class="movie-body">
+                  <table class="movie-meta">
+                    <tr>
+                      <td>Drama · 2024</td>
+                      <td><span class="rating">★ 8.1/10</span></td>
+                    </tr>
+                  </table>
+                  <h3 style="margin: 12px 0 6px">Beyond the North</h3>
+                  <p class="help">Directed by Leo Martin</p>
+                  <div class="card-actions">
+                    <a
+                      class="btn btn-primary btn-small"
+                      href="movie-details.html?id=MV-006"
+                      >View details</a
+                    >
+                    <a
+                      class="btn btn-secondary btn-small"
+                      href="submit-review.html?movie=MV-006"
+                      >Review</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </td>
+          </tr>
+        </table>
       </section>
     </main>
     <footer>
-      <div class="container footer-row">
-        <span>© 2026 CineScope — Movie Review Website</span>
-        <span>Web Engineering · Phase 1 · Static prototype</span>
+      <div class="container">
+        <table class="footer-row">
+          <tr>
+            <td>© 2026 CineScope — Movie Review Website</td>
+            <td>Web Engineering · Phase 1 · Static prototype</td>
+          </tr>
+        </table>
       </div>
     </footer>
   </body>

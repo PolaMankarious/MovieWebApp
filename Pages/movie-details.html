@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CineScope movie reviews and ratings" />
     <title>Movie details | CineScope</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/movie-details.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container nav">
-        <a class="brand" href="index.html">Cine<span>Scope</span></a>
-        <nav aria-label="Guest navigation">
-          <span class="nav-label">Guest navigation</span>
-          <span class="nav-links"
-            ><a class="" href="index.html">Home</a
-            ><a class="" href="movies.html">Movies</a
-            ><a class="" href="login.html">Sign in</a
-            ><a class="" href="signup.html">Create account</a></span
-          >
-        </nav>
+      <div class="container">
+        <table class="nav">
+          <tr>
+            <td>
+              <a class="brand" href="index.html">Cine<span>Scope</span></a>
+            </td>
+            <td class="nav-right">
+              <nav aria-label="Guest navigation">
+                <span class="nav-label">Guest navigation</span>
+                <span class="nav-links"
+                  ><a href="index.html">Home</a><a href="movies.html">Movies</a
+                  ><a href="login.html">Sign in</a
+                  ><a href="signup.html">Create account</a></span
+                >
+              </nav>
+            </td>
+          </tr>
+        </table>
       </div>
     </header>
     <main>
@@ -28,54 +35,79 @@
         <h1>Movie details</h1>
         <p>Example details page for a selected movie.</p>
       </section>
-      <section class="container section" style="padding-top: 10px">
-        <div class="detail-layout">
-          <div class="detail-poster art-blue">THE LAST<br />ORBIT</div>
-          <div class="panel">
-            <div class="movie-meta">
-              <span class="tag">MV-001</span
-              ><span class="rating">★ 8.7/10</span>
-            </div>
-            <h2 style="margin-top: 18px">The Last Orbit</h2>
-            <p class="lead">
-              A deep-space crew discovers a signal that challenges everything
-              they know about their mission and their return home.
-            </p>
-            <div class="detail-list">
-              <div class="detail-item">
-                <small>Genre</small><strong>Sci-Fi</strong>
+      <section class="container section">
+        <table class="detail-layout">
+          <tr>
+            <td class="poster-cell">
+              <div class="detail-poster art-blue">THE LAST<br />ORBIT</div>
+            </td>
+            <td>
+              <div class="panel">
+                <table class="movie-meta">
+                  <tr>
+                    <td><span class="tag">MV-001</span></td>
+                    <td><span class="rating">★ 8.7/10</span></td>
+                  </tr>
+                </table>
+                <h2 style="margin-top: 18px">The Last Orbit</h2>
+                <p class="lead">
+                  A deep-space crew discovers a signal that challenges
+                  everything they know about their mission and their return
+                  home.
+                </p>
+                <table class="detail-list">
+                  <tr>
+                    <td>
+                      <div class="detail-item">
+                        <small>Genre</small><strong>Sci-Fi</strong>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="detail-item">
+                        <small>Release year</small><strong>2025</strong>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="detail-item">
+                        <small>Director</small><strong>Maya Collins</strong>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="detail-item">
+                        <small>Movie ID</small><strong>MV-001</strong>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <h3>Synopsis</h3>
+                <p>
+                  When a remote research mission receives an unexpected
+                  transmission, its crew must decide whether to follow the
+                  signal or protect the future of their expedition.
+                </p>
+                <div class="card-actions">
+                  <a class="btn btn-primary" href="submit-review.html"
+                    >Write a review</a
+                  >
+                  <a class="btn btn-secondary" href="movies.html"
+                    >Back to movies</a
+                  >
+                </div>
               </div>
-              <div class="detail-item">
-                <small>Release year</small><strong>2025</strong>
-              </div>
-              <div class="detail-item">
-                <small>Director</small><strong>Maya Collins</strong>
-              </div>
-              <div class="detail-item">
-                <small>Movie ID</small><strong>MV-001</strong>
-              </div>
-            </div>
-            <h3>Synopsis</h3>
-            <p>
-              When a remote research mission receives an unexpected
-              transmission, its crew must decide whether to follow the signal or
-              protect the future of their expedition.
-            </p>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="submit-review.html"
-                >Write a review</a
-              ><a class="btn btn-secondary" href="movies.html"
-                >Back to movies</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="panel" style="margin-top: 26px">
+            </td>
+          </tr>
+        </table>
+        <div class="panel reviews-panel">
           <h2>Community reviews</h2>
           <div class="review">
-            <div class="movie-meta">
-              <strong>Alex Morgan</strong><span class="rating">★ 9/10</span>
-            </div>
+            <table class="movie-meta">
+              <tr>
+                <td><strong>Alex Morgan</strong></td>
+                <td><span class="rating">★ 9/10</span></td>
+              </tr>
+            </table>
             <p>
               A thoughtful sci-fi story with strong atmosphere and a memorable
               ending.
@@ -83,9 +115,12 @@
             <span class="status status-approved">Approved</span>
           </div>
           <div class="review">
-            <div class="movie-meta">
-              <strong>Jamie Lee</strong><span class="rating">★ 8/10</span>
-            </div>
+            <table class="movie-meta">
+              <tr>
+                <td><strong>Jamie Lee</strong></td>
+                <td><span class="rating">★ 8/10</span></td>
+              </tr>
+            </table>
             <p>
               Great visuals and pacing. I wanted a little more time with the
               supporting characters.
@@ -96,9 +131,13 @@
       </section>
     </main>
     <footer>
-      <div class="container footer-row">
-        <span>© 2026 CineScope — Movie Review Website</span>
-        <span>Web Engineering · Phase 1 · Static prototype</span>
+      <div class="container">
+        <table class="footer-row">
+          <tr>
+            <td>© 2026 CineScope — Movie Review Website</td>
+            <td>Web Engineering · Phase 1 · Static prototype</td>
+          </tr>
+        </table>
       </div>
     </footer>
   </body>
