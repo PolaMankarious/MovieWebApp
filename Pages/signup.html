@@ -77,17 +77,17 @@
             </div>
           </div>
           <div class="field">
-            <label for="accountType"
+            <label for="is_admin"
               >Account type (display only in Phase 1)</label
-            ><select id="accountType" name="accountType" required>
-              <option value="user">User</option>
-              <option value="admin">
+            ><select id="is_admin" name="is_admin" required>
+              <option value="0">User</option>
+              <option value="1">
                 Admin (for project demonstration)
               </option></select
             ><small
-              >The assignment requires admin sign-up fields including an
-              is_admin field. In this static prototype, account type is shown as
-              a form field and is not used for real permissions.</small
+              > Stored as the is_admin field (0 = user, 1 = admin). In this
+              static prototype it is not used for real permissions.
+            </small
             >
           </div>
           <label class="check-row"
