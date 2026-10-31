@@ -16,7 +16,7 @@
           <span class="nav-links"
             ><a class="" href="admin-dashboard.html">Dashboard</a
             ><a class="" href="movies.html">Movies</a
-            ><a class="" href="add-movie.html">Add Movie</a
+            ><a class="active" href="add-movie.html">Add Movie</a
             ><a class="" href="manage-reviews.html">Manage Reviews</a
             ><a class="" href="index.html">Sign out</a></span
           >
@@ -29,7 +29,7 @@
           <span class="eyebrow">Catalog management</span>
           <h1>Edit movie.</h1>
           <p class="lead">
-            Sample edit form pre-filled with the example movie details.
+            Edit the movie details below.
           </p>
           <div class="field">
             <label for="movieId">Movie ID</label
@@ -88,19 +88,15 @@ A deep-space crew discovers a signal that challenges everything they know about 
             >
           </div>
           <button class="btn btn-primary" type="submit">
-            Update movie (demo)</button
-          ><a class="btn btn-secondary" href="admin-dashboard.html">Cancel</a>
-          <p class="help" style="margin-top: 16px">
-            Pre-filled values demonstrate an edit interface. Saving changes
-            requires later-phase logic.
-          </p>
+            Update movie</button
+          ><a id="delete-movie" class="btn btn-danger" href="admin-dashboard.html">Delete Movie</a>
+          <a class="btn btn-secondary" href="admin-dashboard.html">Cancel</a>
         </form>
       </section>
     </main>
     <footer>
       <div class="container footer-row">
         <span>© 2026 CineScope — Movie Review Website</span>
-        <span>Web Engineering · Phase 1 · Static prototype</span>
       </div>
     </footer>
   </body>
