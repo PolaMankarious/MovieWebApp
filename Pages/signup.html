@@ -77,18 +77,11 @@
             </div>
           </div>
           <div class="field">
-            <label for="is_admin"
-              >Account type (display only in Phase 1)</label
-            ><select id="is_admin" name="is_admin" required>
-              <option value="0">User</option>
-              <option value="1">
-                Admin (for project demonstration)
-              </option></select
-            ><small
-              > Stored as the is_admin field (0 = user, 1 = admin). In this
-              static prototype it is not used for real permissions.
-            </small
-            >
+            <label for="accountType">Account type</label>
+            <select id="accountType" name="accountType" required>
+              <option value="user" selected>User</option>
+              <option value="admin">Admin</option>
+            </select>
           </div>
           <label class="check-row"
             ><input type="checkbox" name="terms" required />
@@ -97,10 +90,6 @@
             ></label
           >
           <button class="btn btn-primary" type="submit">Create account</button>
-          <p class="help" style="margin-top: 18px">
-            HTML validation is enabled. Password matching and account creation
-            require later-phase logic.
-          </p>
           <p>
             Already registered?
             <a class="inline-link" href="login.html">Sign in</a>
@@ -111,7 +100,6 @@
     <footer>
       <div class="container footer-row">
         <span>© 2026 CineScope — Movie Review Website</span>
-        <span>Web Engineering · Phase 1 · Static prototype</span>
       </div>
     </footer>
   </body>
