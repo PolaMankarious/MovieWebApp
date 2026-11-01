@@ -6,6 +6,7 @@
     <meta name="description" content="CineScope movie reviews and ratings" />
     <title>My reviews | CineScope</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/my-reviews.css" />
   </head>
   <body>
     <header class="site-header">
@@ -28,10 +29,10 @@
         <h1>My submitted reviews</h1>
         <p>Review your submissions and check their moderation status.</p>
       </section>
-      <section class="container section" style="padding-top: 10px">
+      <section class="container section space-top-small">
         <div class="panel">
           <div class="table-wrap">
-            <table>
+            <table class="reviews-table">
               <thead>
                 <tr>
                   <th>Movie</th>
@@ -50,7 +51,7 @@
                   </td>
                   <td class="rating">★ 9/10</td>
                   <td>Thoughtful sci-fi with a memorable ending.</td>
-                  <td><span class="status status-approved">Approved</span></td>
+                  <td><span class="status status-approved">Accepted</span></td>
                   <td>Published successfully.</td>
                 </tr>
                 <tr>
@@ -79,10 +80,6 @@
             </table>
           </div>
         </div>
-        <div class="notice">
-          These rows are sample data to demonstrate the required review status
-          interface. They are not connected to a database.
-        </div>
         <a class="btn btn-primary" href="submit-review.html"
           >Submit another review</a
         >
@@ -91,7 +88,6 @@
     <footer>
       <div class="container footer-row">
         <span>© 2026 CineScope — Movie Review Website</span>
-        <span>Web Engineering · Phase 1 · Static prototype</span>
       </div>
     </footer>
   </body>

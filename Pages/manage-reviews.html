@@ -27,9 +27,9 @@
       <section class="container page-title">
         <span class="eyebrow">Moderation queue</span>
         <h1>Manage submitted reviews</h1>
-        <p>Review user feedback and demonstrate accept/reject decisions.</p>
+        <p>Review user feedback and manage accept/reject decisions.</p>
       </section>
-      <section class="container section" style="padding-top: 10px">
+      <section class="container section space-top-small">
         <div class="panel">
           <div class="table-wrap">
             <table>
@@ -72,7 +72,7 @@
                   </td>
                   <td class="rating">★ 7/10</td>
                   <td>A warm story with a few slow moments.</td>
-                  <td><span class="status status-approved">Accepted</span></td>
+                  <td><span class="status status-approved">Approved</span></td>
                   <td>Published successfully.</td>
                   <td><span class="help">No action needed</span></td>
                 </tr>
@@ -86,7 +86,7 @@
                   <td>Very bad.</td>
                   <td><span class="status status-rejected">Rejected</span></td>
                   <td>Please add specific, constructive feedback.</td>
-                  <td><span class="help">Decision recorded (sample)</span></td>
+                  <td><span class="help">Decision recorded</span></td>
                 </tr>
               </tbody>
             </table>
@@ -95,8 +95,7 @@
         <div class="panel" id="decision">
           <h2>Decision message</h2>
           <p class="help">
-            The assignment requires a message when a review is rejected. This
-            static form demonstrates that field.
+            
           </p>
           <form action="manage-reviews.html" method="get">
             <div class="field">
@@ -112,7 +111,7 @@
               <label for="decision">Decision</label
               ><select id="decision" name="decision" required>
                 <option value="">Choose a decision</option>
-                <option value="accepted">Accept review</option>
+                <option value="approved">Accept review</option>
                 <option value="rejected">Reject review</option>
               </select>
             </div>
@@ -126,20 +125,15 @@
               ></textarea>
             </div>
             <button class="btn btn-primary" type="submit">
-              Submit decision (demo)
+              Submit decision
             </button>
           </form>
-          <p class="form-note">
-            In Phase 1, the form does not update the table or send a message.
-            That behavior requires JavaScript/backend logic in a later phase.
-          </p>
         </div>
       </section>
     </main>
     <footer>
       <div class="container footer-row">
         <span>© 2026 CineScope — Movie Review Website</span>
-        <span>Web Engineering · Phase 1 · Static prototype</span>
       </div>
     </footer>
   </body>
